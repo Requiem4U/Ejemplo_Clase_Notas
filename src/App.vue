@@ -6,11 +6,18 @@
     <ListaNotas :notas="listaNotas" @editarNota="editarNota" 
     @eliminarNota="eliminarNota" />
   </div>
+
+  <Ejmplo_Menu></Ejmplo_Menu>
+  <EditNota_Flotante_Vuetify></EditNota_Flotante_Vuetify>
+
 </template>
 
 <script setup>
 import ListaNotas from './componentes/ListaNotas.vue';
 import AgregarNota from './componentes/AgregarNota.vue';
+import Ejmplo_Menu from './componentes/Ejmplo_Menu.vue';
+import EditNota_Flotante_Vuetify from './componentes/EditNota_Flotante_Vuetify.vue';
+
 import { reactive } from 'vue';
 
 let listaNotas = reactive([
